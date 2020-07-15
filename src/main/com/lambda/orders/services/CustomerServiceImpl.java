@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service(value = "customerService")
 public class CustomerServiceImpl implements CustomerServices {
     @Autowired
-    private CustomerRepository customerrepos;
+    private CustomerRepository custrepos;
 
     @Override
     public Customer save(Customer customer) {
-        return customerrepos.save(customer);
+        return custrepos.save(customer);
     }
 }

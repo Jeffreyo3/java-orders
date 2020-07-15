@@ -8,10 +8,10 @@ import org.springframework.stereotype.Service;
 @Service(value = "orderService")
 public class OrderServiceImpl implements OrderServices {
     @Autowired
-    private OrderRepository orderrepos;
+    private OrderRepository ordersrepos;
 
     @Override
     public Order save(Order order) {
-        return orderrepos.save(order);
+        return ordersrepos.save(order);
     }
 }
